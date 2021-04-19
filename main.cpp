@@ -1,6 +1,9 @@
 #include <iostream>
+#include "Sort/Sort.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    Sort::Main();
+
     return 0;
 }
