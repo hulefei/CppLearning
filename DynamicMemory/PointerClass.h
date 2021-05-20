@@ -7,8 +7,11 @@
 
 
 #include <string>
+#include <iostream>
 
 class PointerClass {
+    friend std::ostream& operator<<(std::ostream &os, const PointerClass &item);
+
 public:
     explicit PointerClass(const std::string &s = std::string()) : ps(new std::string(s)), i(0), used(new std::size_t(1)) { }
 

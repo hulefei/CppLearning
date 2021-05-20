@@ -6,15 +6,17 @@
 #include "DynamicMemory.h"
 #include "StrVec.h"
 #include "ValueClass.h"
+#include "PointerClass.h"
 
 void ValueClassTest();
 void StrVecTest();
-void PointClassTest();
+void PointerClassTest();
 
 void DynamicMemory::Main() {
-    ValueClassTest();
+//    ValueClassTest();
+//    StrVecTest();
 
-    StrVecTest();
+    PointerClassTest();
 }
 
 void StrVecTest() {
@@ -45,11 +47,15 @@ void ValueClassTest() {
     std::cout << valueClass2 << std::endl;
 }
 
-void PointClassTest() {
+void PointerClassTest() {
 
-    std::cout << "ValueClassTest================" << std::endl;
+    std::cout << "PointClassTest================" << std::endl;
 
-    
+    PointerClass p1("Hiya");
+    std::cout << p1 << std::endl;
+
+    PointerClass p2(p1);
+    std::cout << p2 << std::endl;
 }
 
 

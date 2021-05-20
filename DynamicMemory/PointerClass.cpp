@@ -25,3 +25,8 @@ PointerClass::~PointerClass() {
         delete used;
     }
 }
+
+std::ostream &operator<<(std::ostream &os, const PointerClass &item) {
+    os << "used:" << *item.used << ";ps:" << *item.ps << ";i:" << item.i;
+    return os;
+}

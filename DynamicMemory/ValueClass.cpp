@@ -13,13 +13,12 @@ ValueClass &ValueClass::operator=(const ValueClass &rhs) {
     return *this; //返回本对象
 }
 
+ValueClass::~ValueClass() {
+    delete ps;
+    std::cout << "~ValueClass" << std::endl;
+}
+
 std::ostream &operator<<(std::ostream &os, const ValueClass &item) {
     os << "i:" << item.i << "; ps:" << *item.ps;
     return os;
-}
-
-ValueClass::~ValueClass() {
-    delete ps;
-
-    std::cout << "~ValueClass" << std::endl;
 }
