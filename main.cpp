@@ -3,6 +3,7 @@
 #include "OOP/OOP.h"
 #include "VirtualTable/VirtualTable.h"
 #include "DynamicMemory/DynamicMemory.h"
+#include "SmartPointer/SmartPointer.h"
 
 
 void test() {
@@ -13,7 +14,10 @@ int main() {
 //    Sort::Main();
 //    OOP::Main();
 //    VirtualTable::Main();
-    DynamicMemory::Main();
+//    DynamicMemory::Main();
+
+    SmartPointer::Main();
+
     return 0;
 }
 
