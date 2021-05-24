@@ -24,7 +24,7 @@ public:
 
 private:
     std::shared_ptr<std::vector<TargetClass>> data;
-//    void check(size_type i, const std::string &msg) const;
+    void check(size_type i, const std::string &msg) const;
 };
 
 
