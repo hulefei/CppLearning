@@ -5,6 +5,7 @@
 #include "DynamicMemory/DynamicMemory.h"
 #include "SmartPointer/SmartPointer.h"
 #include "Lambda/LambdaExample.h"
+#include "Template/TemplateExample.h"
 
 
 void test() {
@@ -19,7 +20,9 @@ int main() {
 
 //    SmartPointer::Main();
 
-    LambdaExample::Main();
+//    LambdaExample::Main();
+
+    TemplateExample::Main();
 
     return 0;
 }
