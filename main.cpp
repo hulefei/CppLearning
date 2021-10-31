@@ -4,6 +4,7 @@
 #include "VirtualTable/VirtualTable.h"
 #include "DynamicMemory/DynamicMemory.h"
 #include "SmartPointer/SmartPointer.h"
+#include "Lambda/LambdaExample.h"
 
 
 void test() {
@@ -16,7 +17,9 @@ int main() {
 //    VirtualTable::Main();
 //    DynamicMemory::Main();
 
-    SmartPointer::Main();
+//    SmartPointer::Main();
+
+    LambdaExample::Main();
 
     return 0;
 }
