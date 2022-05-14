@@ -54,17 +54,10 @@ void LambdaExample::Main() {
         }
         return "None";
     };
-//    std::cout << f1("aaa", "bbbb") << std::endl;
-//    std::cout << f2("aa") << std::endl;
-
     std::vector<std::string> words;
     words.push_back("1");
     words.push_back("22");
     words.push_back("333");
-
-//    for(auto i = words.begin(); i != words.end(); ++i) {
-//        std::cout << *i << std::endl;
-//    }
 
 //    biggies(words, 2);
     biggies2(words, 2);
