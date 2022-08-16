@@ -1,29 +1,25 @@
 #include <iostream>
-#include "Sort/Sort.h"
-#include "OOP/OOP.h"
-#include "VirtualTable/VirtualTable.h"
-#include "DynamicMemory/DynamicMemory.h"
-#include "SmartPointer/SmartPointer.h"
-#include "Lambda/LambdaExample.h"
-#include "Template/TemplateExample.h"
+#include "operation/complex.h"
 
+int operator_main(){
+    complex c1(1, 7);
+    complex c2;
+    complex();
+    complex(4, 5);
 
-void test() {
-    int b = 1;
-}
+    c1 += c2;
 
-int main() {
-//    Sort::Main();
-//    OOP::Main();
-//    VirtualTable::Main();
-//    DynamicMemory::Main();
+    auto c3 = c1 + c2;
 
-//    SmartPointer::Main();
-
-//    LambdaExample::Main();
-
-    TemplateExample::Main();
+    std::cout << c1;
+    std::cout << c2;
+    std::cout << c3;
 
     return 0;
 }
+
+int main() {
+    return operator_main();
+}
+
 
