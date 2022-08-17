@@ -1,5 +1,6 @@
 #include <iostream>
 #include "operation/complex.h"
+#include "constructor/mystring.h"
 
 int operator_main(){
     complex c1(1, 7);
@@ -18,8 +19,26 @@ int operator_main(){
     return 0;
 }
 
+int mystring_main(){
+    mystring s1("hello");
+    std::cout << s1 << std::endl;
+
+    mystring s3(s1);
+    std::cout << s3.get_c_str() << std::endl;
+
+    mystring s2("world");
+    s3 = s2;
+    std::cout << s3 << std::endl;
+
+    return 0;
+}
+
 int main() {
-    return operator_main();
+//     operator_main();
+
+     mystring_main();
+
+     return 0;
 }
 
 
